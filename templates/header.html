@@ -1,0 +1,21 @@
+{{ define "header"}}
+<header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="/" class="nav-link px-2 text-secondary">Home</a></li>
+          {{ if eq .IsAuth true }}
+          <li><a href="/CreatePost" class="nav-link px-2 text-white">Create Post</a></li>
+          <li><a href="/Profile" class="nav-link px-2 text-white">Profile</a></li>
+          <form method="post" action="/signout">
+          <li><button type="submit" class="btn btn-dark" value="sign-out" name="submit" style="min-height: 40px;">Sign out</button></li>
+          </form>
+          {{ else }}
+          <li><a href="/signin" class="nav-link px-2 text-white">Sign in</a></li>
+          <li><a href="/signup" class="nav-link px-2 text-white">Sign up</a></li>
+          {{end}}
+        </ul>
+      </div>
+    </div>
+  </header>
+{{end}}
