@@ -1,20 +1,25 @@
 # Forum
 
-## Authors
-Aibek_kz,satybalding
+## Authors:
+- Aibek
 
 ## Description:
-The forum project is a website with the creation of posts and comments (on the same posts). On this project, the user can create an account, posts, comments . And also put likes and dislikes.
-## Usage: how to run
-```
-sh script.sh
-or
-go run cmd/main.go
-```
-## Implementation details: algorithm
-In the program have been used basic golang packages.
+### This project consists in creating a web forum that allows :
 
-## Version
-go : 1.16.3
-## Stacks
-golang, dockerfile, html/css
+- communication between users.
+- associating categories to posts.
+- liking and disliking posts and comments.
+- filtering posts.
+
+## Usage: how to run?
+```
+student$ make build
+student$ make start
+```
+
+# Stacks
+- golang 
+- docker 
+- html/css 
+- js 
+- sqlite
